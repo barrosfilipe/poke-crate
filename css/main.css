@@ -1,0 +1,63 @@
+body {
+  background: url("../img/bg.png");
+  overflow: hidden;
+}
+
+.crate {
+  margin-top: 10%;
+}
+
+.logo {
+  max-width: 320px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.pokeball {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.click-to-open {
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.pokemon-found {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.88);
+  font-family: "Press Start 2P", cursive;
+}
+
+.pokemon {
+  max-width: 200px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.message {
+  margin-top: 80px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.close {
+  margin-top: 20px;
+  max-width: 120px;
+}
+
+.name {
+  text-transform: uppercase;
+}
