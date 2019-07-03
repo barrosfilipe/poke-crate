@@ -4,7 +4,10 @@ body {
 }
 
 .crate {
-  margin-top: 10%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -60,4 +63,18 @@ body {
 
 .name {
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 320px) {
+  .pokeball {
+    width: 200px;
+  }
+
+  .pokemon {
+    width: 150px;
+  }
+
+  .close {
+    width: 60px;
+  }
 }
