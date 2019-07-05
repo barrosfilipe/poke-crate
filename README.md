@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/XBnGCcH.png"></p>
+﻿<p align="center"><img src="https://i.imgur.com/XBnGCcH.png"></p>
 <h1 align="center">A Pokémon Loot Crate Style Game</h1>
 
 <p align="center">You click over the <b>Poké Ball</b> and a random <b>Pokémon</b> appears as a <u>loot</u>.</p>
@@ -29,3 +29,6 @@ Visit [https://pokecrate.surge.sh](https://pokecrate.surge.sh) to see the projec
 _This project is not affiliated to the `Pokémon` or `Nintendo`_
 
 _Some data was collected from [The Spriters Resource](https://www.spriters-resource.com/nintendo_switch/pokemonquest/sheet/106163/)_
+
+
+Copyright 2019
