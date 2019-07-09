@@ -30,6 +30,15 @@ body {
   margin: auto;
 }
 
+.backpack-button {
+  text-align: center;
+  padding: 20px;
+}
+
+.backpack {
+  width: 70px;
+}
+
 .pokemon-found {
   display: none;
   padding: 20px;

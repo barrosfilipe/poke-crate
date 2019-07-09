@@ -4,6 +4,8 @@ var pokemonFound = document.querySelector(".pokemon-found");
 var closePokemonFound = document.querySelector(".close");
 var pokemonImg = document.querySelector(".pokemon");
 var pokemonName = document.querySelector(".name");
+var backpackButton = document.querySelector(".backpack-button");
+var backpack = document.querySelector(".backpack");
 
 /* Variable to save de pokémons in the local storage */
 var pokemonSave = [];
