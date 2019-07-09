@@ -32,7 +32,9 @@ pokeball.addEventListener("click", function() {
 
   /* Set pokémon name found to html */
   pokemonName.textContent = pokemonNameByNumber.name;
-  pokemonSave.push(pokemonName.textContent);
+  
+  /* Add pokémon nade in the array */
+  pokemonSave.push(pokemonNameByNumber);
 
    /* Save the pokémon in the localStorage */
    localStorage.setItem('pokemons', JSON.stringify(pokemonSave));
