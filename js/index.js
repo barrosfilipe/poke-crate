@@ -5,6 +5,9 @@ var closePokemonFound = document.querySelector(".close");
 var pokemonImg = document.querySelector(".pokemon");
 var pokemonName = document.querySelector(".name");
 
+/* Variable to save de pokémons in the local storage */
+var pokemonSave = [];
+
 /* Pokeball audio */
 var pokeballAudio = new Audio("sfx/pokeball.mp3");
 pokeballAudio.volume = 0.1;
@@ -29,6 +32,10 @@ pokeball.addEventListener("click", function() {
 
   /* Set pokémon name found to html */
   pokemonName.textContent = pokemonNameByNumber.name;
+  pokemonSave.push(pokemonName.textContent);
+
+   /* Save the pokémon in the localStorage */
+   localStorage.setItem('pokemons', JSON.stringify(pokemonSave));
 
   /* 
     Wait 500ms to show (fadeIn) `.pokemon-found` div,
