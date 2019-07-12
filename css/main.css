@@ -80,12 +80,9 @@ body {
 }
 .title-backpack{
   color: #df6a1c;
-} 
-.close { 
-  margin-top: 20px; 
-  max-width: 120px;
 }
-.close-backpack { 
+
+.close, .close-backpack { 
   margin-top: 20px; 
   max-width: 120px;
 }
@@ -101,6 +98,10 @@ body {
 
   .pokemon {
     width: 150px;
+  }
+
+  .backpack-icon {
+    width: 60px;
   }
 
   .close {

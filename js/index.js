@@ -4,6 +4,8 @@ var pokemonFound = document.querySelector(".pokemon-found");
 var closePokemonFound = document.querySelector(".close");
 var pokemonImg = document.querySelector(".pokemon");
 var pokemonName = document.querySelector(".name");
+var amount = document.querySelector(".amount-pokemon");
+var listPokemon = document.querySelector
 var backpack = document.querySelector(".backpack");
 var backpackIcon = document.querySelector(".backpack-icon");
 var backpackClose = document.querySelector(".close-backpack");
@@ -89,5 +91,6 @@ backpackClose.addEventListener("click", function() {
 
   setTimeout(function() {
     backpack.style.display = "none";
+    backpackIcon.classList.add("infinite");
   }, 500);
 });
