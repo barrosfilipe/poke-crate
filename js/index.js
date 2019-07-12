@@ -5,7 +5,7 @@ var closePokemonFound = document.querySelector(".close");
 var pokemonImg = document.querySelector(".pokemon");
 var pokemonName = document.querySelector(".name");
 var amount = document.querySelector(".amount-pokemon");
-var listPokemon = document.querySelector
+var listPokemon = document.querySelector(".list-pokemon");
 var backpack = document.querySelector(".backpack");
 var backpackIcon = document.querySelector(".backpack-icon");
 var backpackClose = document.querySelector(".close-backpack");
@@ -75,8 +75,11 @@ closePokemonFound.addEventListener("click", function() {
 
 backpackIcon.addEventListener("click", function() {
   backpackIcon.classList.remove("infinite");
+  
    /* Vibrate when using mobile */
    window.navigator.vibrate([50, 50, 50]);
+
+   var pokemonList = JSON.parse(localStorage.getItem('pokemons'));
 
    setTimeout(function() {
     backpack.style.display = "block";
