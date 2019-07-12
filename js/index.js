@@ -4,8 +4,9 @@ var pokemonFound = document.querySelector(".pokemon-found");
 var closePokemonFound = document.querySelector(".close");
 var pokemonImg = document.querySelector(".pokemon");
 var pokemonName = document.querySelector(".name");
-var backpackButton = document.querySelector(".backpack-button");
 var backpack = document.querySelector(".backpack");
+var backpackIcon = document.querySelector(".backpack-icon");
+var backpackClose = document.querySelector(".close-backpack");
 
 /* Variable to save de pokémons in the local storage */
 var pokemonSave = [];
@@ -35,7 +36,7 @@ pokeball.addEventListener("click", function() {
   /* Set pokémon name found to html */
   pokemonName.textContent = pokemonNameByNumber.name;
   
-  /* Add pokémon nade in the array */
+  /* Add pokémon in the array */
   pokemonSave.push(pokemonNameByNumber);
 
    /* Save the pokémon in the localStorage */
@@ -47,6 +48,7 @@ pokeball.addEventListener("click", function() {
   */
   setTimeout(function() {
     pokemonFound.style.display = "block";
+
     pokemonFound.classList.add("animated", "fadeIn");
     pokeball.classList.remove("animated", "shake");
   }, 500);
@@ -66,5 +68,26 @@ closePokemonFound.addEventListener("click", function() {
   setTimeout(function() {
     pokemonFound.style.display = "none";
     pokemonFound.classList.remove("animated", "fadeOut");
+  }, 500);
+});
+
+backpackIcon.addEventListener("click", function() {
+  backpackIcon.classList.remove("infinite");
+   /* Vibrate when using mobile */
+   window.navigator.vibrate([50, 50, 50]);
+
+   setTimeout(function() {
+    backpack.style.display = "block";
+
+    backpack.classList.add("animated", "fadeIn");
+  }, 500);
+});
+
+backpackClose.addEventListener("click", function() {
+  pokeballAudio.pause();
+  pokeballAudio.currentTime = 0;
+
+  setTimeout(function() {
+    backpack.style.display = "none";
   }, 500);
 });

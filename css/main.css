@@ -30,13 +30,27 @@ body {
   margin: auto;
 }
 
-.backpack-button {
+.container-backpack {
   text-align: center;
   padding: 20px;
 }
 
-.backpack {
+.backpack-icon {
   width: 70px;
+}
+
+.backpack {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.88);
+  font-family: "Press Start 2P", cursive;
 }
 
 .pokemon-found {
@@ -64,9 +78,15 @@ body {
   color: #fff;
   font-size: 1.5rem;
 }
-
-.close {
-  margin-top: 20px;
+.title-backpack{
+  color: #df6a1c;
+} 
+.close { 
+  margin-top: 20px; 
+  max-width: 120px;
+}
+.close-backpack { 
+  margin-top: 20px; 
   max-width: 120px;
 }
 
