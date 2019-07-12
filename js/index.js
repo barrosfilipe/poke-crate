@@ -75,11 +75,18 @@ closePokemonFound.addEventListener("click", function() {
 
 backpackIcon.addEventListener("click", function() {
   backpackIcon.classList.remove("infinite");
-  
+
    /* Vibrate when using mobile */
    window.navigator.vibrate([50, 50, 50]);
 
+  /*  Recovering data from the localStorage*/
    var pokemonList = JSON.parse(localStorage.getItem('pokemons'));
+
+   /* TODO 
+   Fazer um map para exibir os pokemons em tela
+   Nome do pokémon
+   Imagem do pokémon 
+   */
 
    setTimeout(function() {
     backpack.style.display = "block";
