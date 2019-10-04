@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-    <meta name="theme-color" content="#ff4200" />
-    <meta name="msapplication-navbutton-color" content="#ff4200" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#ff4200" />
-    <title>Poke Crate - Open Crates to Find Pokémons!</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="crate">
-      <img src="img/logo.png" class="logo" alt="Poke Crate" />
-      <img src="img/pokeball.png" class="pokeball" alt="Pokeball" />
-      <img
-        src="img/click-to-open.png"
-        class="click-to-open animated pulse infinite"
-        alt="Click to Open"
-      />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <meta name="theme-color" content="#ff4200" />
+  <meta name="msapplication-navbutton-color" content="#ff4200" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ff4200" />
+  <title>Poke Crate - Open Crates to Find Pokémons!</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <div class="crate">
+    <img src="img/logo.png" class="logo" alt="Poke Crate" />
+    <img src="img/pokeball.png" class="pokeball" alt="Pokeball" />
+    <img src="img/click-to-open.png" class="click-to-open animated pulse infinite" alt="Click to Open" />
+
+    <div class="container-backpack">
+      <img src="img/backpack.png" class="backpack-icon animated rubberBand infinite" alt="Click to Open">
     </div>
 
-    <div class="pokemon-found">
-      <img
-        src="img/pokemons/1.png"
-        class="pokemon animated tada infinite"
-        alt="Pokémon"
-      />
-      <div class="message">
-        <p>You found...</p>
-        <p class="name animated pulse infinite"></p>
+  </div>
 
-        <img src="img/close.png" class="close" alt="Close" />
-      </div>
+  <div class="backpack">
+    <img src="img/backpack.png" class="backpack-icon" alt="Click to Open">
+    <div class="message">
+      <p class="title-backpack">My Backpack</p>
+      <p class="amount-pokemon"></p>
+      <p class="list-pokemon">
+      </p>
+      <img src="img/close.png" class="close-backpack" alt="Close" />  
     </div>
+  </div>
 
-    <script src="js/pokemons.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+  <div class="pokemon-found">
+    <img src="img/pokemons/1.png" class="pokemon animated tada infinite" alt="Pokémon" />
+    <div class="message">
+      <p>You found...</p>
+      <p class="name animated pulse infinite"></p>
+
+      <img src="img/close.png" class="close" alt="Close" />
+    </div>
+  </div>
+
+  <script src="js/pokemons.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>

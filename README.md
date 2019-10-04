@@ -3,7 +3,7 @@
 
 <p align="center">You click over the <b>Poké Ball</b> and a random <b>Pokémon</b> appears as a <u>loot</u>.</p>
 
-# How to use?
+# How to use? Como utilizar?
 
 Just `download` or `clone` the repository and open the `index.html` file.
 
