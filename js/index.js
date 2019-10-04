@@ -82,6 +82,8 @@ backpackIcon.addEventListener("click", function() {
   /*  Recovering data from the localStorage*/
    var pokemonList = JSON.parse(localStorage.getItem('pokemons'));
 
+   console.log(pokemonList)
+
    /* TODO 
    Fazer um map para exibir os pokemons em tela
    Nome do pokémon
